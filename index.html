@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Travel Japan</title>
 </head>
@@ -16,14 +17,14 @@
 
     <!-- HEADER -->
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__iner">
                 <div class="header__logo">
                     <img class="header__img" src="img/header/odigo-Logo.svg" alt="odigo">
                 </div>
 
-                <div class="nav">
+                <div class="nav" id="nav">
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a class="nav__link" href="#">Articles</a>
@@ -40,13 +41,19 @@
                     </ul><!--/.NAV__UL-->
                 </div><!--/.NAV-->
 
+                <!-- BURGER -->
+
+                <button class="burger" type="button" id="burger">
+                    <span class="burger__item"></span>
+                </button>
+
             </div><!--/.HEADER__INER-->
         </div><!--/.CONTAINER-->
     </header><!--/.HEADER-->
 
     <!-- INTRO -->
 
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="container">
             <div class="intro__content">
                 <h1 class="intro__title">Discover Amazing places in Japan</h1>
@@ -438,6 +445,9 @@
     </footer><!--/.FOOTER-->
 
 </div><!--/.PAGE-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/app.js"></script>
 
 </body>
 </html>
