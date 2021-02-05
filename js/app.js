@@ -32,3 +32,24 @@ $('#burger').click(function(event){
         $('body').toggleClass('lock');
     }
 })
+
+// SMOOTH SCROLL
+
+$("[data-scroll]").on("click", function(event) {
+    event.preventDefault();
+    let blockId = $(this).data("scroll");
+    let blockOffset = $(blockId).offset().top;
+    let introW = $("#intro").innerWidth();
+    if (introW <= 768) {
+    $("#nav").toggleClass("active");
+    $("#burger").toggleClass("active");
+
+    $("#nav a").removeClass("active");
+    
+    $(this).addClass("active");
+    $('body').toggleClass('lock');
+    }
+    $("html, body").animate({
+        scrollTop: blockOffset
+    }, 500)
+});

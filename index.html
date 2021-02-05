@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Travel Japan</title>
 </head>
 <body>
@@ -27,16 +27,16 @@
                 <div class="nav" id="nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Articles</a>
+                            <a class="nav__link" href="#" data-scroll="#articles">Articles</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Locations</a>
+                            <a class="nav__link" href="#" data-scroll="#locations">Locations</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Videos</a>
+                            <a class="nav__link" href="#videos" data-scroll="#videos">Videos</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Sign in</a>
+                            <a class="nav__link" href="#" data-scroll="#intro">Sign in</a>
                         </li>
                     </ul><!--/.NAV__UL-->
                 </div><!--/.NAV-->
@@ -165,7 +165,7 @@
 
     <!-- TOURS -->
 
-    <div class="tours">
+    <div class="tours" id="articles">
         <div class="wraper">
 
             <div class="tours__item tour">
@@ -199,7 +199,7 @@
 
     <!-- TOP -->
 
-    <section class="top">
+    <section class="top" id="locations">
         <div class="wraper">
 
             <h2 class="section__title top__title">Today top places to visit</h2>
@@ -362,7 +362,7 @@
 
     <!-- VIDEO -->
 
-    <div class="video">
+    <div class="video" id="videos">
         <div class="video__iner">
             <div class="video__item">
                 <iframe class="video__element" src="https://www.youtube.com/embed/WLIv7HnZ_fE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
